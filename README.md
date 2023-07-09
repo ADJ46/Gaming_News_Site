@@ -18,7 +18,7 @@ gaming community.
 - [Deep Kotian](https://github.com/deepKotian)
 
 ## System Design
-![System](Images/System.PNG)
+![System](Images/systemdesign.png)
 
 ### Hardware Requirement
 ```
@@ -57,19 +57,19 @@ the website. Users who have logged in to their accounts will be able to use this
 
 
 ## Implementation
-![login](Images/System.PNG)
+![login](Images/login.png)
 
-![Homepage](Images/System.PNG)
+![Homepage](Images/homepage.png)
 
-![Newspage](Images/System.PNG)
+![Newspage](Images/Newspage.png)
 
-![Newspage2](Images/System.PNG)
+![Newspage2](Images/Newspage2.png)
 
-![Chatroom](Images/System.PNG)
+![Chatroom](Images/chatroom.png)
 
-![Merch](Images/System.PNG)
+![Merch](Images/merch.png)
 
-![Gateway](Images/System.PNG)
+![Gateway](Images/gateway.png)
 
 
 
@@ -81,6 +81,6 @@ gaming community. The website consist of almost all the features required by a g
 
 
 ## Documentation
-- [Project PPT](Documents/Project.pptx)
-- [Project Report](Documents/Project.pptx)
-- [Log Book](Documents/Project.pptx)
+- [Project PPT](Documents/Ppt.pptx)
+- [Project Report](Documents/Report.pdf)
+- [Log Book](Documents/LogBook.pdf)
