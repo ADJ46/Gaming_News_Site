@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block merchactive %} {% endblock merchactive %}
+{% block content %}
+
+
+<section class="blog_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <div class="main_title">
+                    <h2>Merch</h2>
+                    <h1>Merch</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" style="margin-bottom:50px">
+            <div class="list-group">
+                 {% for cat in allCat %}
+                <a href="/merch/merch/?category={{cat.id}}" class="list-group-item list-group-item-action">{{cat.name}}</a>
+                {% endfor %}
+            </div>
+            </div>
+        <div class="row" >
+            {% for merch in allMerch %}
+            <div class="col-lg-4 col-md-8" style="margin-bottom:50px">
+                <div class="blog_items">
+                   <div class="blog_img_box">
+                        <img class="img-fluid" src="{{merch.image.url}}" alt="">
+                    </div> 
+                    <div class="blog_content">
+                       <center> <a class="title" >{{merch.name}}</a></center>
+                        <center><p>Rs. {{merch.price}}</p></center>
+                        <a href="/merch/payment/{{merch.slug}}"><center><button type="button" class="btn btn-primary">Add To Cart</button></center></a>
+                        {% comment %} <p> ugndnummbf</p>
+                        <div class="date">
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>{{news.timeStamp}} </a>
+                            <a href="/newspost/{{news.slug}}"><i class="fa fa-comments-o" aria-hidden="true"></i> Continue..</a>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+             {% endfor %}
+        </div>
+    </div>
+</section>
+</div>
+{% endblock content %}

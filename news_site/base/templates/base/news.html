@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block newsactive %} {% endblock newsactive %}
+{% block content %}
+
+<section class="blog_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main_title">
+                    <h2>News</h2>
+                    <h1>News</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for news in allNews %}
+            <div class="col-lg-4 col-md-6">
+                <div class="blog_items" style="margin-bottom:30px">
+                   <div class="blog_img_box">
+                        <img class="img-fluid" src="{{news.image.url}}" alt="">
+                    </div> 
+                    <div class="blog_content">
+                       <center> <a class="title" href="/newspost/{{news.slug}}">{{news.title}}</a></center>
+                        <p >{{news.author}}</p>
+                        <p>{{news.content| truncatechars:50 | safe  }}</p>
+                        <div class="date">
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>{{news.timeStamp}} </a>
+                            <a href="/newspost/{{news.slug}}"><i class="fa fa-comments-o" aria-hidden="true"></i> Continue..</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
